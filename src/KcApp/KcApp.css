@@ -1,8 +1,243 @@
 
-.my-color {
-	color: red;
+body{
+font-family: "Circular Pro";
 }
 
-.my-font {
-	font-family: 'Work Sans';
+.header-wrapper-casumo {
+  display: none;
+}
+
+.container-margin {
+  margin: 30px;
+}
+
+.login-new body {
+  background: #f0f0f0 no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.card-pf-casumo {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 500px;
+  border-top: 0;
+  box-shadow: 0 0 0;
+  border-radius: 24px;
+}
+
+/*tablet*/
+@media (max-width: 840px) {
+  .login-pf-page .card-pf-casumo {
+    max-width: none;
+  }
+}
+@media (max-width: 767px) {
+  .login-pf-page .card-pf-casumo {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+  }
+  .card-pf-casumo.login-pf-accounts {
+    max-width: none;
+  }
+}
+
+.header-casumo {
+  display: flex;
+  flex-direction: column;
+  background-color: #3c0098;
+  border-radius: 24px 24px 0 0;
+  height: 86px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-casumo #kc-page-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.header-casumo #kc-locale {
+  display: none;
+}
+
+#forgot-password-instructions {
+  font-size: 14px;
+  font-weight: 900;
+  padding: 0 20px;
+  margin: 32px 0 16px 0;
+}
+
+.form-control-casumo {
+  display: block;
+  width: 100%;
+  height: 56px;
+  padding: 2px 16px;
+  font-size: 12px;
+  line-height: 1.66666667;
+  color: #363636;
+  background-color: #fff;
+  background-image: none;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.inputError{
+  border-color: #FC484C !important;
+}
+
+
+#kc-form-login {
+  padding: 30px 30px 3px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.form-group-casumo:last-of-type {
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* #kc-form-login div.form-group-casumo:last-of-type, <- applies to button */
+#kc-register-form div.form-group-casumo:last-of-type,
+#kc-update-profile-form div.form-group-casumo:last-of-type {
+  padding: 40px;
+  margin-bottom: 0px;
+}
+
+.login-pf-settings {
+  margin: 8px 0;
+  display: block;
+}
+.login-pf-page .login-pf-settings {
+  display: block;
+}
+
+.login-pf-settings a {
+  color: #1a212c;
+  padding: 0 20px;
+  margin: 8px 0;
+}
+
+#kc-form-options {
+  display: block;
+}
+
+.sign-up-link-casumo {
+  display: none;
+}
+
+.btn {
+  background-color: #4c00c2;
+  background-repeat: repeat-x;
+  color: #ffffff;
+  border-radius: 100px;
+  font-size: 16px;
+  height: 56px;
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  background-color: #e5eaed !important;
+  background-repeat: repeat-x;
+  color: #798291;
+  border-radius: 100px;
+  font-size: 16px;
+  height: 56px;
+}
+
+.back-to-login-btn{
+  background-color: white;
+  background-repeat: repeat-x;
+  color: #798291;
+  border:2px solid #7982911e ;
+  border-radius: 100px;
+  font-size: 16px;
+  height: 56px;
+  text-align: center;
+  padding-top: 16px;
+  margin: 15px 0 32px 0;
+}
+
+.alert {
+display: none;
+}
+
+.alert > .pficon {
+  font-size: 22px;
+  position: absolute;
+  left: 50px;
+  top: 10px;
+}
+
+.alert-casumo {
+  border-width: 1px;
+  padding-left: 50px;
+  padding-right: 14px;
+  position: relative;
+  word-wrap: break-word;
+  margin-top: 21.5px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+}
+
+.alert-casumo > .pficon {
+  font-size: 22px;
+  position: absolute;
+  left: 18px;
+  bottom: 3px;
+  color: #FC484C;
+  font-weight: 700;
+
+}
+
+.error-icon > .pficon {
+  font-size: 22px;
+  position: absolute;
+  right: 35px;
+  top: 16px;
+  color: #FC484C;
+  font-weight: 700;
+
+}
+.alert-success {
+  color: #363636;
+  background-color: #e9f4e9;
+  border-color: #3f9c35;
+}
+
+#password-field {
+  padding-top: 43px;
+}
+
+::placeholder {
+  color: #d3d8e1;
+}
+
+.alert-error {
+  background-color: #ffffff;
+  border-color: #FC484C;
+  color: #FC484C;
+}
+
+#input-error{
+  background-color: #ffffff;
+  border-color: #FC484C;
+  color: black;
+  font-size: 16px;
+  font-weight: 900;
+  color: #FC484C;
+
+}
+
+.pficon-error-circle-o:before{
+  color: #FC484C;
+  content: "\e926";
 }

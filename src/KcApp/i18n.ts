@@ -9,16 +9,36 @@ export function useI18n(props: Props) {
         "extraMessages": {
             "en": {
                 "alphanumericalCharsOnly": "Only alphanumerical characters",
-				"gender": "Gender",
-				// Here we overwrite the default english value for the message "doForgotPassword" 
+                "gender": "Gender",
+                // Here we overwrite the default english value for the message "doForgotPassword" 
                 // that is "Forgot Password?" see: https://github.com/InseeFrLab/keycloakify/blob/f0ae5ea908e0aa42391af323b6d5e2fd371af851/src/lib/i18n/generated_messages/18.0.1/login/en.ts#L17
-                "doForgotPassword": "I forgot my password"
+                "doForgotPassword": "Forgot Password?",
+                "usernameOrEmail": "Username or Email",
+                "passwordPlaceholder": "Enter Password",
+                "usernamePlaceholder": "Enter Username or Email Address",
+                "backToLogin": "Back to Login",
+                "mfaAuthTitle": "Sign in to your account",
+                "mfaAuthSubject": "Casumo One Time Code",
+                "forgotPasswordInstructions": "Enter your username or email address and we will send you instructions on how to create a new password.",
+                "mfaInstructions": "Enter the code we sent to your mailbox OR alternatively click on the magic link.",
+                "resendOTP": "Send OTP",
+
             },
             "fr": {
                 /* spell-checker: disable */
                 "alphanumericalCharsOnly": "Caractère alphanumérique uniquement",
-				"gender": "Genre",
-				"doForgotPassword": "J'ai oublié mon mot de passe"
+                "gender": "Genre",
+                "doForgotPassword": "J'ai oublié mon mot de passe",
+                "usernameOrEmail": "Username or Email",
+                "passwordPlaceholder": "Enter Password",
+                "usernamePlaceholder": "Enter Username or Email Address",
+                "backToLogin": "Back to Login",
+                "mfaAuthTitle": "Sign in to your account",
+                "mfaAuthSubject": "Casumo One Time Code",
+                "forgotPasswordInstructions": "Enter your username or email address and we will send you instructions on how to create a new password.",
+                "mfaInstructions": "Enter the code we sent to your mailbox OR alternatively click on the magic link.",
+                "resendOTP": "Send OTP",
+
                 /* spell-checker: enable */
             },
         },

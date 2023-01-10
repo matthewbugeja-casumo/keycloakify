@@ -1,0 +1,22 @@
+/*
+<link rel="preload" href="%PUBLIC_URL%/fonts/circular/lineto-circular-pro-book.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="%PUBLIC_URL%/fonts/circular/lineto-circular-pro-book.woff2" as="font" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/fonts/circular/font.css">
+*/
+
+@font-face {
+  font-family: "Circular Pro";
+  font-style: normal;
+  font-weight: normal; /*400*/
+  font-display: swap;
+  src: url("./lineto-circular-pro-book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circular Pro";
+  font-style: normal;
+  font-weight: bold; /*700*/
+  font-display: swap;
+  src: url("./lineto-circular-pro-black.woff2") format("woff2");
+}
