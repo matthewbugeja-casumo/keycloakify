@@ -19,7 +19,7 @@ const LoginResetPassword = memo(
   }: { kcContext: KcContext_Login_Reset_Password; i18n: I18n } & KcProps) => {
     const { msg, msgStr } = i18n;
 
-    const { realm, url, messagesPerField, auth } = kcContext;
+    const { realm, url, messagesPerField } = kcContext;
 
     const [usernameFieldValue, setUsernameFieldValue] = useState("");
 

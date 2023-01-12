@@ -22,7 +22,7 @@ const LoginOtp = memo(
   }: { kcContext: KcContext_Login_Otp; i18n: I18n } & KcProps) => {
     const { msg, msgStr } = i18n;
 
-    const { realm, url, messagesPerField, auth,  } = kcContext;
+    const { url, messagesPerField,} = kcContext;
 
     const [codeFieldValue, setCodeFieldValue] = useState("");
 

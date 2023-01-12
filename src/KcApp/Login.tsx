@@ -23,14 +23,11 @@ const Login = memo(
     const { msg, msgStr } = i18n;
 
     const {
-      social,
       realm,
       url,
-      usernameEditDisabled,
       login,
       messagesPerField,
       auth,
-      registrationDisabled,
       recaptchaRequired,
       recaptchaSiteKey,
     } = kcContext;
@@ -86,7 +83,9 @@ const Login = memo(
                     />
                     {messagesPerField.existsError("username") && (
                       <div className="error-icon">
-                        <span className="pficon material-symbols-outlined">error</span>
+                        <span className="pficon material-symbols-outlined">
+                          error
+                        </span>
                       </div>
                     )}
                   </div>
@@ -119,7 +118,9 @@ const Login = memo(
                     />
                     {messagesPerField.existsError("username") && (
                       <div className="error-icon">
-                        <span  className="pficon material-symbols-outlined">error</span>
+                        <span className="pficon material-symbols-outlined">
+                          error
+                        </span>
                       </div>
                     )}
                   </div>
@@ -136,14 +137,16 @@ const Login = memo(
                         <a href={url.loginResetCredentialsUrl}>
                           {msg("doForgotPassword")}
                         </a>
-                      </span> 
+                      </span>
                     )}
                   </div>
                 </div>
 
                 {messagesPerField.existsError("username") && (
                   <div className="alert-casumo">
-                    <span className="pficon material-symbols-outlined">error</span>
+                    <span className="pficon material-symbols-outlined">
+                      error
+                    </span>
                     <span
                       id="input-error"
                       className={clsx(props.kcInputErrorMessageClass)}
@@ -153,7 +156,7 @@ const Login = memo(
                     </span>
                   </div>
                 )}
-                {/* {recaptchaRequired && ( */}
+                {recaptchaRequired && (
                   <div className="form-group-casumo">
                     <div className={clsx(props.kcInputWrapperClass)}>
                       <div
@@ -163,7 +166,7 @@ const Login = memo(
                       ></div>
                     </div>
                   </div>
-                {/* )} */}
+                )}
 
                 <div
                   id="kc-form-buttons"
